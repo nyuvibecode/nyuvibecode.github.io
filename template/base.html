@@ -2,11 +2,14 @@
 <html>
     <head>
     {% block head %}
-    <title>{% block title %}NYU CTF Benchmark{% endblock %}</title>
+    <title>{% block title %}NYU CTF Dataset{% endblock %}</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/chota@0.9.2/dist/chota.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300&amp;display=swap" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css" />
     {% endblock %}
     </head>
@@ -14,14 +17,15 @@
     <body>
         <div class="container">
             <div class="banner is-center is-vertical-align bg-primary text-light">
-                <h1>NYU CTF Benchmark</h1>
+                <h1>NYU CTF Dataset</h1>
                 <h4>A benchmark of CTF challenges to test LLM capabilities in cybersecurity</h4>
+                <p>Minghao Shao*, Sofija Jancheska*, Meet Udeshi*, Brendan Dolan-Gavitt*, <br> Haoran Xi, Kimberly Milner, Boyuan Chen, Max Yin, Siddharth Garg, <br>Prashanth Krishnamurthy, Farshad Khorrami, Ramesh Karri, Muhammad Shafique</p>
             </div>
             <nav class="tabs is-center">
-                <a>Leaderboard</a>
-                <a>Paper</a>
-                <a>Code</a>
-                <a>Submit</a>
+                <a href="/#leaderboard">🥇 Leaderboard</a>
+                <a href="https://arxiv.org/abs/2406.05590">📃 Paper</a>
+                <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">💻 Code</a>
+                <a href="/#submit">➕ Submit</a>
             </nav>
             {% block content %}
             BASE TEMPLATE! ADD CONTENT BLOCK!

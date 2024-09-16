@@ -1,13 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row" id="content">
-    <div class="col-8">
-        <div class="card">
-            <h4> Leaderboard</h4>
+<div class="row">
+    <div class="col-12">
+        <div class="card" id="about">
+            <p>ℹ️ The <b>NYU CTF dataset</b> is designed to evaluate cybersecurity capabilities of <b>LLM agents</b>. We provide difficult real-world CTF challenges to facilitate research in improving LLMs at interactive cybersecurity tasks and complex automated task planning. Evaluating LLM agents on the NYU CTF challenges yields insights into their potential for AI-driven cybersecurity to perform real-world threat management. Check out the <a>paper</a> for details.</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card" id="announcements">
+            <h3>Announcements</h3>
             <hr>
-
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card" id="leaderboard">
+            <h3>Leaderboard</h3><a name="leaderboard"></a>
+            <hr>
             <table>
                 <thead>
+                    <th>#</th>
                     <th>Agent</th>
                     <th>Model</th>
                     <th>Score</th>
@@ -16,6 +31,7 @@
                 </thead>
                 {% for entry in data["submissions"]|sort(reverse=True, attribute="solved") %}
                 <tr>
+                    <td>{{ loop.index }}</td>
                     <td>{{ entry["name"] }}</td>
                     <td>{{ entry["model"] }}</td>
                     <td>{{ "%0.2f"|format(entry["solved"]/data["dataset"]["total"]*100) }}%</td>
@@ -26,14 +42,11 @@
             </table>
         </div>
     </div>
-    <div class="col-4">
-        <div class="card" id="about">
-            <h4>About</h4>
-            <hr>
-            <p>Description of the benchmark</p>
-        </div>
-        <div class="card" id="announcements">
-            <h4>Announcements</h4>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card" id="submit">
+            <h3>How to Submit</h3><a name="submit"></a>
             <hr>
         </div>
     </div>

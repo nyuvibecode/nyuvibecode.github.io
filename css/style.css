@@ -1,5 +1,5 @@
 :root {
-    --font-family-sans: "Montserrat";
+    --font-family-sans: "Fira Sans", "Noto Color Emoji", sans-serif;
 }
 
 .banner {
@@ -12,10 +12,19 @@
     margin-bottom: 0;
 }
 
-#content {
-    margin-top: 4rem;
+.banner p {
+    text-align: center;
 }
 
-#about {
+nav {
     margin-bottom: 4rem;
+}
+
+.tabs a {
+    margin-left: 5pt;
+    margin-right: 5pt;
+}
+
+.card {
+    margin-bottom: 2em;
 }

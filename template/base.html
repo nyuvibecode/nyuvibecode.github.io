@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {% block head %}
+    <title>{% block title %}NYU CTF Benchmark{% endblock %}</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/chota@0.9.2/dist/chota.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300&amp;display=swap" />
+        <link rel="stylesheet" href="/css/style.css" />
+    {% endblock %}
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="banner is-center is-vertical-align bg-primary text-light">
+                <h1>NYU CTF Benchmark</h1>
+                <h4>A benchmark of CTF challenges to test LLM capabilities in cybersecurity</h4>
+            </div>
+            <nav class="tabs is-center">
+                <a>Leaderboard</a>
+                <a>Paper</a>
+                <a>Code</a>
+                <a>Submit</a>
+            </nav>
+            {% block content %}
+            BASE TEMPLATE! ADD CONTENT BLOCK!
+            {% endblock %}
+        </div>
+    </body>
+</html>

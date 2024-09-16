@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row" id="content">
+    <div class="col-8">
+        <div class="card">
+            <h4> Leaderboard</h4>
+            <hr>
+
+            <table>
+                <thead>
+                    <th>Agent</th>
+                    <th>Model</th>
+                    <th>Score</th>
+                    <th>Logs</th>
+                    <th>Link</th>
+                </thead>
+                {% for entry in data["submissions"]|sort(reverse=True, attribute="solved") %}
+                <tr>
+                    <td>{{ entry["name"] }}</td>
+                    <td>{{ entry["model"] }}</td>
+                    <td>{{ "%0.2f"|format(entry["solved"]/data["dataset"]["total"]*100) }}%</td>
+                    <td>{{ entry["logs"] }}</td>
+                    <td>{{ entry["link"] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card" id="about">
+            <h4>About</h4>
+            <hr>
+            <p>Description of the benchmark</p>
+        </div>
+        <div class="card" id="announcements">
+            <h4>Announcements</h4>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}

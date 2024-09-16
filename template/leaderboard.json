@@ -1,0 +1,47 @@
+{
+  "dataset": {
+    "total": 200,
+    "rev": 51,
+    "crypto": 53,
+    "pwn": 38,
+    "forensics": 15,
+    "web": 19
+  },
+  "submissions": [
+    {
+      "name": "NYU CTF Baseline",
+      "logs": "",
+      "link": "",
+      "model": "GPT 3.5",
+      "solved": 8
+    },
+    {
+      "name": "NYU CTF Baseline",
+      "logs": "",
+      "link": "",
+      "model": "GPT 4",
+      "solved": 11
+    },
+    {
+      "name": "NYU CTF Baseline",
+      "logs": "",
+      "link": "",
+      "model": "Claude 3 Haiku",
+      "solved": 7
+    },
+    {
+      "name": "NYU CTF Baseline",
+      "logs": "",
+      "link": "",
+      "model": "LLaMa",
+      "solved": 0
+    },
+    {
+      "name": "NYU CTF Baseline",
+      "logs": "",
+      "link": "",
+      "model": "Mixtral",
+      "solved": 0
+    }
+  ]
+}

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function loadLeaderboard() {
-    fetch('../template/leaderboard.json')
+    fetch('../data/leaderboard.json')
         .then(response => response.json())
         .then(data => {
             updateLeaderboardTable(data.submissions);

@@ -184,7 +184,7 @@ button {
       margin: 0.2em 0.5em;
       transition: all 0.2s linear;
       color: var(--accent_color);
-      background-color: white;
+      background-color: black;
     }
     &.outline:hover {
       color: wheat;

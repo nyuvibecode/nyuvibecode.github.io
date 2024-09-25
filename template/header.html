@@ -10,9 +10,9 @@
           <img src="img/spid_banner_2.png " style="height: 300px; padding-top: 0em; padding-left: 0.5em" />
         </div>
 
-        <!--p style="text-align: center;margin-top:1em;"-->
-        <h1 style="font-size: 25px; padding-top: 1.2em">Competition:</h1>
-        <p> 28 October 2024 20:00 EST -- 8 November 2024 8:00 EST </p>
+        <h4><b>Competition Start:</b> 28 October 2024 20:00 EST </br>
+        <b>Competition Ends:</b> 8 November 2024 8:00 EST </h4>
+        <h2 id="countdown_timer"></h2>
 
         <div class="content-wrapper" style="margin-top: 2em">
            <a href="index.html">
@@ -37,10 +37,43 @@
             </button>
           </a>
        </div>
-      </div>
+    </div>
     </section>
+    
+    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown-->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 28, 2024 20:00:00").getTime();
+        //var countDownDate = new Date("Nov 8, 2024 08:00:00").getTime();
 
-  </div>
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="countdown_timer"
+            document.getElementById("countdown_timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown_timer").innerHTML = "<b>Competition In Progress..!"
+            }
+        }, 0);
+    </script>
+    
+    </div>
 
 
 

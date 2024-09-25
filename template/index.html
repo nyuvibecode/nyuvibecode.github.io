@@ -1,56 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 {% include "header.html" %}
-<div class="row">
-    <div class="col-12">
-        <div class="card" id="about">
-            <p>ℹ️ The <b>NYU CTF dataset</b> is designed to evaluate cybersecurity capabilities of <b>LLM agents</b>. We provide difficult real-world CTF challenges to facilitate research in improving LLMs at interactive cybersecurity tasks and complex automated task planning. Evaluating LLM agents on the NYU CTF challenges yields insights into their potential for AI-driven cybersecurity to perform real-world threat management. Check out the <a>paper</a> for details.</p>
-            <pre>@article {
-    
-}</pre>
-        </div>
-    </div>
-</div>
+
 <div class="row">
     <div class="col-12">
         <div class="card" id="announcements">
             <h3>Announcements</h3>
             <hr>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <div class="card" id="leaderboard">
-            <h3>Leaderboard</h3><a name="leaderboard"></a>
-            <hr>
-            <table>
-                <thead>
-                    <th>#</th>
-                    <th>Agent</th>
-                    <th>Model</th>
-                    <th>Score</th>
-                    <th>Logs</th>
-                    <th>Link</th>
-                </thead>
-                {% for entry in data["submissions"]|sort(reverse=True, attribute="solved") %}
-                <tr>
-                    <td>{{ loop.index }}</td>
-                    <td>{{ entry["name"] }}</td>
-                    <td>{{ entry["model"] }}</td>
-                    <td>{{ "%0.2f"|format(entry["solved"]/data["dataset"]["total"]*100) }}%</td>
-                    <td>{{ entry["logs"] }}</td>
-                    <td>{{ entry["link"] }}</td>
-                </tr>
-                {% endfor %}
-            </table>
+          <i class="material-icons">attachment</i>
+          Competition Details
+          [<a style="color:#0ca7ff"
+            hreft="https://www.csaw.io/llm-attack-challenge">CSAW.io</a>]
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <div class="card" id="submit">
-            <h3>How to Submit</h3><a name="submit"></a>
+            <h3>Questions</h3><a name="submit"></a>
             <hr>
         </div>
     </div>

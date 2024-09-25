@@ -2,7 +2,7 @@ import json
 import os
 from jinja2 import Environment, FileSystemLoader
 
-FILES = ["index.html"] # Add the list of files to render
+FILES = ["index.html", "leaderboard.html"] # Add the list of files to render
 
 def main(args):
     env = Environment(loader=FileSystemLoader("./"))
@@ -22,8 +22,8 @@ def main(args):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser("Leaderboard generator from template")
-    parser.add_argument("--data", default="leaderboard.json", help="JSON file containing leaderboard data")
-    parser.add_argument("--out", default="out", help="Output directory")
+    parser.add_argument("--data", default="../data/leaderboard.json", help="JSON file containing leaderboard data")
+    parser.add_argument("--out", default="../", help="Output directory")
     args = parser.parse_args()
 
     main(args)

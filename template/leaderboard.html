@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row">
+    <div class="col-12">
+            Scoreboard updated at midnight - 1am EST daily.
+     </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card" id="leaderboard">
+            <h3>Leaderboard</h3><a name="leaderboard"></a>
+            <hr>
+            <table class="lines">
+                <thead>
+                    <th>#</th>
+                    <th>Agent</th>
+                    <th>Model</th>
+                    <th>Score</th>
+                    <th>Logs</th>
+                    <th>Link</th>
+                </thead>
+                {% for entry in data["submissions"]|sort(reverse=True, attribute="solved") %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ entry["name"] }}</td>
+                    <td>{{ entry["model"] }}</td>
+                    <td>{{ "%0.2f"|format(entry["solved"]/data["dataset"]["total"]*100) }}%</td>
+                    <td>{{ entry["logs"] }}</td>
+                    <td>{{ entry["link"] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>NYU CTF Dataset</title>
+        <title>CSAW'24 LLMAC Leaderboard</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/chota@0.9.2/dist/chota.min.css" />
@@ -15,30 +15,25 @@
     <body>
         <div class="container">
             <div class="banner is-center is-vertical-align bg-primary text-light">
-                <h1>NYU CTF Dataset</h1>
-                <h4>A benchmark of CTF challenges to test LLM capabilities in cybersecurity</h4>
-                <p>Minghao Shao*, Sofija Jancheska*, Meet Udeshi*, Brendan Dolan-Gavitt*, <br> Haoran Xi, Kimberly Milner, Boyuan Chen, Max Yin, Siddharth Garg, <br>Prashanth Krishnamurthy, Farshad Khorrami, Ramesh Karri, Muhammad Shafique</p>
+                <div class="is-vertical-align"><h1 style="font-weight:bold; font-size: 3em; margin-right:1em">CSAW'24 <br>LLM CTF Attack<br>Challenge</h1> <img src="/img/spid.png" height="200px"></div>
+                <h4>It's time to think a little differently about the capabilities of Gen AI</h4>
+                <p>28 October to 8 November 2024</p>
             </div>
             <nav class="tabs is-center">
-                <a href="/#leaderboard">🥇 Leaderboard</a>
+                <a href="/">🥇 Main Leaderboard</a>
                 <a href="https://arxiv.org/abs/2406.05590">📃 Paper</a>
                 <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">💻 Code</a>
-                <a href="/#submit">➕ Submit</a>
+                <a href="https://www.csaw.io/llm-attack-challenge">➕ Participate</a>
             </nav>
 
             <div class="row">
                 <div class="col-12">
                     <div class="card" id="about">
-                        <p>The <b>NYU CTF dataset</b> is designed to evaluate cybersecurity capabilities of <b>LLM agents</b>. We provide difficult real-world CTF challenges to facilitate research in improving LLMs at interactive cybersecurity tasks and complex automated task planning. Evaluating LLM agents on the NYU CTF challenges yields insights into their potential for AI-driven cybersecurity to perform real-world threat management. Check out the <a href="https://arxiv.org/abs/2406.05590">paper</a> for details.</p>
-                        <pre>@misc{shao2024nyuctf,
-      title={NYU CTF Dataset: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security},
-      author={Minghao Shao and Sofija Jancheska and Meet Udeshi and Brendan Dolan-Gavitt and Haoran Xi and Kimberly Milner and Boyuan Chen and Max Yin and Siddharth Garg and Prashanth Krishnamurthy and Farshad Khorrami and Ramesh Karri and Muhammad Shafique},
-      year={2024},
-      eprint={2406.05590},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR},
-      url={https://arxiv.org/abs/2406.05590},
-}</pre>
+                        <p>
+                        This page hosts the leaderboard for the <a href="https://www.csaw.io/llm-attack-challenge">CSAW'24 LLM CTF Attack Challenge</a> being held from 28<sup>th</sup> October to 8<sup>th</sup> November 2024.
+                        The challenge asks participants to create an LLM agent that can solve CTF challenges.
+                        Examples of LLM agents are the baseline agent presented in the <a href="/">NYU CTF Dataset</a>, and the <a href="https://enigma-agent.github.io/">EnIGMA</a> agent that achieves state-of-the-art results.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -56,7 +51,7 @@
                         <h3>Leaderboard</h3><a name="leaderboard"></a>
                         <hr>
                         <table id="leaderboard">
-                            <thead>
+                            <thead class="bg-primary text-light">
                                 <th>#</th>
                                 <th>Agent</th>
                                 <th>Model</th>
@@ -77,10 +72,14 @@
                     <div class="card" id="submit">
                         <h3>How to Submit</h3><a name="submit"></a>
                         <hr>
+                        🚧 TBA 🚧
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            var leaderboardFile = "../data/llmac_leaderboard.json";
+        </script>
         <script src="js/load_leaderboard.js"></script>
     </body>
 </html>

@@ -1,120 +1,91 @@
 <!DOCTYPE html>
 <html>
     <head>
-    
-    <meta charset="utf-8" />
-    <title>NYU LLM</title>
-    <meta name="description" content="LLM CTF Attack Competition" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta property="og:image" content="/logo.png" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="..." crossorigin="anonymous" />
+        <title>NYU CTF Dataset</title>
         <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/chota@0.9.2/dist/chota.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
-        
-    </head>
-
-    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/chota@0.9.2/dist/chota.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
 
     <body>
         <div class="container">
-            
-  <div style="padding-bottom: 50px">
-    <section style="background-color: var(--dark_accent_color)">
-      <div class="content-wrapper title-wrapper" style="flex-direction: column">
-        <div style="
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              padding-bottom: 15px;
-            ">
-          <img src="img/spid_banner_2.png " style="height: 300px; padding-top: 0em; padding-left: 0.5em" />
-        </div>
+            <div class="banner is-center is-vertical-align bg-primary text-light">
+                    <div class="is-vertical-align"><h1 style="font-weight:bold; font-size: 4em; margin-right:1em">NYU CTF <br>Dataset</h1> <img src="/img/spid.png" height="180px"></div>
+                <h4>A benchmark of CTF challenges to test LLM capabilities in cybersecurity</h4>
+                <p>Minghao Shao*, Sofija Jancheska*, Meet Udeshi*, Brendan Dolan-Gavitt*, <br> Haoran Xi, Kimberly Milner, Boyuan Chen, Max Yin, Siddharth Garg, <br>Prashanth Krishnamurthy, Farshad Khorrami, Ramesh Karri, Muhammad Shafique</p>
+            </div>
+            <nav class="tabs is-center">
+                <a href="/#leaderboard">🥇 Leaderboard</a>
+                <a href="https://arxiv.org/abs/2406.05590">📃 Paper</a>
+                <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">💻 Code</a>
+                <a href="/#submit">➕ Submit</a>
+                <a href="/csaw_llmac.html">👾 LLM CTF Attack Challenge</a>
+            </nav>
 
-        <!--p style="text-align: center;margin-top:1em;"-->
-        <h1 style="font-size: 25px; padding-top: 1.2em">Competition:</h1>
-        <p> 28 October 2024 20:00 EST -- 8 November 2024 8:00 EST </p>
-
-        <div class="content-wrapper" style="margin-top: 2em">
-           <a href="index.html">
-            </button>
-            <button class="outline">
-              <i class="material-icons">home</i>Home&nbsp;
-            </button>
-          </a>
-          <a href="leaderboard.html">
-            <button class="outline">
-              <i class="material-icons">leaderboard</i>Leaderboard&nbsp;
-            </button>
-          </a>
-          <a href="https://arxiv.org/abs/2406.05590">
-            <button class="outline">
-              <i class="material-icons">description</i>Paper&nbsp;
-            </button>
-          </a>
-          <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">
-            <button class="outline">
-              <i class="material-icons">attachment</i>Code&nbsp;
-            </button>
-          </a>
-       </div>
-      </div>
-    </section>
-
-  </div>
-
-
-
-
-
-<!--div class="row">
-    <div class="col-12">
-        <div class="card" id="about">
-            <p>ℹ️ The <b>NYU CTF dataset</b> is designed to evaluate cybersecurity capabilities of <b>LLM agents</b>. We provide difficult real-world CTF challenges to facilitate research in improving LLMs at interactive cybersecurity tasks and complex automated task planning. Evaluating LLM agents on the NYU CTF challenges yields insights into their potential for AI-driven cybersecurity to perform real-world threat management. Check out the <a>paper</a> for details.</p>
-            <pre>@article {
-    
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" id="about">
+                        <p>The <b>NYU CTF dataset</b> is designed to evaluate cybersecurity capabilities of <b>LLM agents</b>. We provide difficult real-world CTF challenges to facilitate research in improving LLMs at interactive cybersecurity tasks and complex automated task planning. Evaluating LLM agents on the NYU CTF challenges yields insights into their potential for AI-driven cybersecurity to perform real-world threat management. Check out the <a href="https://arxiv.org/abs/2406.05590">paper</a> for details.</p>
+                        <pre>@misc{shao2024nyuctf,
+    title={NYU CTF Dataset: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security},
+    author={Minghao Shao and Sofija Jancheska and Meet Udeshi and Brendan Dolan-Gavitt and Haoran Xi and Kimberly Milner and Boyuan Chen and Max Yin and Siddharth Garg and Prashanth Krishnamurthy and Farshad Khorrami and Ramesh Karri and Muhammad Shafique},
+    year={2024},
+    eprint={2406.05590},
+    archivePrefix={arXiv},
+    primaryClass={cs.CR},
+    url={https://arxiv.org/abs/2406.05590},
 }</pre>
-        </div>
-    </div>
-</div-->
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-12">
+                    <div class="card" id="announcements">
+                        <h3>Announcements</h3>
+                        <hr>
+                    </div>
+                </div>
+            </div>-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" id="card_leaderboard">
+                        <h3>Leaderboard</h3><a name="leaderboard"></a>
+                        <hr>
+                        <table id="leaderboard">
+                            <thead class="bg-primary text-light">
+                                <th>#</th>
+                                <th>Agent</th>
+                                <th>Model</th>
+                                <th>Score</th>
+                                <th>Logs</th>
+                                <th>Link</th>
+                            </thead>
+                            <tbody class="is-hidden">
 
-<div class="row">
-    <div class="col-12">
-        <div class="card" id="announcements">
-            <h3>Announcements</h3>
-            <hr>
-          <i class="material-icons">attachment</i>
-          Competition Details
-          [<a style="color:#0ca7ff"
-            href="https://docs.google.com/document/d/1PB_Vuorsq8o9x-_Wk6kcwPRAvgQoNKKFf1kQL-TzT7s/edit?usp=sharing">Google
-            Drive</a>]
+                            </tbody>
+                        </table>
+                        <div id="leaderboard_loader" class="loader"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" id="submit">
+                        <h3>How to Submit</h3><a name="submit"></a>
+                        <hr>
+                        🚧 TBA 🚧
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <div class="card" id="submit">
-            <h3>Questions</h3><a name="submit"></a>
-            <hr>
-        </div>
-    </div>
-</div>
-
-        </div>
+        <script>
+            var leaderboardFile = "../data/leaderboard.json";
+        </script>
+        <script src="js/load_leaderboard.js"></script>
     </body>
 </html>

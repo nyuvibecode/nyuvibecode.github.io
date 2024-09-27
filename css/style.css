@@ -14,6 +14,10 @@
     --font-color: #333333;
 }
 
+html,body {
+    scroll-behavior: smooth;
+}
+
 .banner {
     flex: 1;
     flex-direction: column;

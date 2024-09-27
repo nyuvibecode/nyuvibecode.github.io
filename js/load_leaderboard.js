@@ -47,8 +47,8 @@ function updateLeaderboardTable(data) {
             <td>${item.name} <i>${item.comment}</i></td>
             <td>${getModelPretty(item.model)}</td>
             <td>${score}%</td>
-            <td><a href="${item.logs}">🔗</a></td>
-            <td><a href="${item.link}">🔗</a></td>
+            <td><a class="animsition-link" href="${item.logs}">🔗</a></td>
+            <td><a class="animsition-link" href="${item.link}">🔗</a></td>
         `;
         leaderboardTableBody.appendChild(row);
     });

@@ -10,22 +10,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
     </head>
 
     <body>
+    <div class="animsition">
         <div class="container">
             <div class="banner is-center is-vertical-align bg-primary text-light">
                 <div class="is-vertical-align"><h1 style="font-weight:bold; font-size: 3em; margin-right:1em">CSAW'24 <br>LLM CTF Attack<br>Challenge</h1> <img src="/img/spid.png" height="200px"></div>
                 <h4>It's time to think a little differently about the capabilities of Gen AI</h4>
                 <p>28 October to 8 November 2024 - <b id="countdown_timer"></b></p>
             </div>
-            <nav class="tabs is-center">
-                <a href="index.html">🥇 Main Leaderboard</a>
-                <a href="https://www.csaw.io/llm-attack-challenge">💻 Information</a>
-                <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">🔧 Framework</a>
-                <a href="https://forms.gle/zd5PwT4Jp8j1H9RW9">➕ Participate</a>
-            </nav>
 
+                <nav class="tabs is-center">
+                    <a class="animsition-link"  href="index.html">🏆 Main Leaderboard</a>
+                    <a href="#leaderboard">🥇 Competition Leaderboard</a>
+                    <a class="animsition-link"  href="https://www.csaw.io/llm-attack-challenge">💻 Information</a>
+                    <a class="animsition-link"  href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">🔧 Framework</a>
+                    <a class="animsition-link"  href="https://forms.gle/zd5PwT4Jp8j1H9RW9">➕ Participate</a>
+                </nav>
             <div class="row">
                 <div class="col-12">
                     <div class="card" id="about">
@@ -77,10 +82,12 @@
                 </div>
             </div>
         </div>
-        <script>
-            var leaderboardFile = "../data/llmac_leaderboard.json";
+    </div>
+    <script>
+            var leaderboardFile = "data/llmac_leaderboard.json";
         </script>
         <script src="js/load_leaderboard.js"></script>
+        <script src="js/fade_l.js"></script>
         <script src="js/counter.js"></script>
     </body>
 </html>

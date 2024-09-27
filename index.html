@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
     <head>
         <title>NYU CTF Dataset</title>
         <meta charset="utf-8" />
@@ -10,22 +10,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
     </head>
-
     <body>
+    <div class="animsition">
         <div class="container">
             <div class="banner is-center is-vertical-align bg-primary text-light">
                     <div class="is-vertical-align"><h1 style="font-weight:bold; font-size: 4em; margin-right:1em">NYU CTF <br>Dataset</h1> <img src="/img/spid.png" height="180px"></div>
                 <h4>A benchmark of CTF challenges to test LLM capabilities in cybersecurity</h4>
                 <p>Minghao Shao*, Sofija Jancheska*, Meet Udeshi*, Brendan Dolan-Gavitt*, <br> Haoran Xi, Kimberly Milner, Boyuan Chen, Max Yin, Siddharth Garg, <br>Prashanth Krishnamurthy, Farshad Khorrami, Ramesh Karri, Muhammad Shafique</p>
             </div>
+
             <nav class="tabs is-center">
                 <a href="#leaderboard">🥇 Leaderboard</a>
-                <a href="https://arxiv.org/abs/2406.05590">📃 Paper</a>
-                <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">📁 Dataset</a>
-                <a href="https://github.com/NYU-LLM-CTF/llm_ctf_automation">🔧 Framework</a>
+                <a class="animsition-link"  href="https://arxiv.org/abs/2406.05590">📃 Paper</a>
+                <a class="animsition-link"  href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">📁 Dataset</a>
+                <a class="animsition-link"  href="https://github.com/NYU-LLM-CTF/llm_ctf_automation">🔧 Framework</a>
                 <a href="#submit">➕ Submit</a>
-                <a href="csaw_llmac.html">👾 LLM CTF Attack Challenge</a>
+                <a class="animsition-link" href="csaw_llmac.html">👾 LLM CTF Attack Challenge</a>
             </nav>
 
             <div class="row">
@@ -84,9 +88,11 @@
                 </div>
             </div>
         </div>
+    </div>
         <script>
             var leaderboardFile = "../data/leaderboard.json";
         </script>
         <script src="js/load_leaderboard.js"></script>
+        <script src="js/fade_r.js"></script>
     </body>
 </html>

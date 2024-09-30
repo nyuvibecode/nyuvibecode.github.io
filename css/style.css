@@ -64,7 +64,7 @@ nav {
     font-size: 0.8em;
 }
 
-#about p a {
+.card p a {
     color: var(--color-success);
 }
 

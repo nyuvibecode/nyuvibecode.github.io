@@ -1,4 +1,4 @@
-name: Merge main to gh-pages
+name: Merge main to gh-pages-2
 
 on:
   push:
@@ -25,10 +25,10 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Checkout gh-pages repository
+      - name: Checkout gh-pages-2 repository
         uses: actions/checkout@v3
         with:
-          ref: gh-pages
+          ref: gh-pages-2
           fetch-depth: 0
           
       - name: Set up Git
@@ -36,7 +36,7 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
-      - name: Merge main to gh-pages
+      - name: Merge main to gh-pages-2
         run: |
           git merge origin/main
           if [[ -n $(git status -s) ]]; then

@@ -38,7 +38,7 @@ jobs:
 
       - name: Merge main to gh-pages
         run: |
-          git merge origin/main
+          git merge origin/main --allow-unrelated-histories -f
           if [[ -n $(git status -s) ]]; then
             echo "There are conflicts. Merge aborted."
             exit 1

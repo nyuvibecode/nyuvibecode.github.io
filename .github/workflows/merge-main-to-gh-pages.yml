@@ -1,32 +1,46 @@
-name: merge-main-to-gh-pages.yml
+name: Merge main to gh-pages
+
 on:
   push:
     branches:
-      - master 
       - main
-permissions:
-  contents: write
+
 jobs:
-  deploy:
+  merge_to_ghpages:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      issues: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v5
+      - name: Checkout main repository
+        uses: actions/checkout@v3
         with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material 
-      - run: pip install ghp-import
-      - run: mkdocs build
-      - run: ghp-import docs -p -x docs
+          ref: main
+          fetch-depth: 0
 
+      - name: Checkout gh-pages repository
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+          
+      - name: Set up Git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Merge main to gh-pages
+        run: |
+          git merge origin/main
+          if [[ -n $(git status -s) ]]; then
+            echo "There are conflicts. Merge aborted."
+            exit 1
+          fi
+          git push origin

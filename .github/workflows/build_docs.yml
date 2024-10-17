@@ -36,6 +36,6 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: pip install ghp-import
-      - run: git merge origin/gh-pages
+      - run: git merge origin/gh-pages --allow-unrelated-histories -f 
       - run: mkdocs build -c --site-dir site 
       - run: ghp-import site -p -x docs

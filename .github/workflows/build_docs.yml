@@ -26,5 +26,5 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: pip install ghp-import
-      - run: mkdocs build
-      - run: ghp-import docs -p -x docs
+      - run: mkdocs build --site-dir site 
+      - run: ghp-import site -p -x docs

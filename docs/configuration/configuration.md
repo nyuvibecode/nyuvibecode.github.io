@@ -1,4 +1,4 @@
-# Environment variables
+# Configuration TODO
 
 !!! hint "Persisting environment variables"
     All environment variables can also be added to `keys.cfg` instead.

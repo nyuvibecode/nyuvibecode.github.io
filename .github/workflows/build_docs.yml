@@ -9,10 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main repository
+      - name: Checkout develop repository
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: develop
           fetch-depth: 0
       - name: Checkout gh-pages repository
         uses: actions/checkout@v3
@@ -34,9 +34,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
-      - run: pip install ghp-import
-      - run: git merge origin/gh-pages --allow-unrelated-histories 
-      - run: git merge origin/main --allow-unrelated-histories 
-      - run: mkdocs build -c --site-dir site 
-      - run: ghp-import site -p -x docs
+      - run: git branch -D origin/gh-pages
+      
+      

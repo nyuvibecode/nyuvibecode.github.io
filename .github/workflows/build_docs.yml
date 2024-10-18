@@ -28,7 +28,7 @@ jobs:
           git reset --hard origin/main
           git merge -X theirs origin/main
           git pull origin main 
-          git push origin gh-pages --force
+          git push origin --force
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x

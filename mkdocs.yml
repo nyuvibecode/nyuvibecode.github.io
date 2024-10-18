@@ -15,15 +15,12 @@ theme:
   logo: assets/readme_assets/tiny_spid.png
   features:
   - navigation.footer
+  - search.highlight
   name: material
   palette:
     primary: light green
     accent: lime
-plugins:
-  #  - offline
-  #- privacy
-extra_css:
-  #- stylesheets/custom.css
+plugins: []
 markdown_extensions:
   - md_in_html
   - attr_list

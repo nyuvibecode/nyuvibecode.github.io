@@ -24,6 +24,11 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git fetch --all
+          git reset --hard origin/main
+          git merge -X theirs origin/main
+          git pull origin main 
+          git push origin gh-pages --force
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
@@ -36,11 +41,7 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: pip install ghp-import
-      - run: |
-          git fetch --all
-          git reset --hard origin/main
-          git merge -X theirs origin/main
-          git push origin --force
+      
       - run: mkdocs build -c --site-dir site 
       - run: ghp-import site -p -x docs
       

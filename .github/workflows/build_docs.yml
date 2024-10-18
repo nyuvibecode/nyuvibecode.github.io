@@ -35,6 +35,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: git branch -D origin/gh-pages
+      - run: git branch -D gh-pages
       
       

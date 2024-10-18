@@ -40,6 +40,7 @@ jobs:
           git fetch --all
           git reset --hard origin/main
           git merge -X theirs origin/main
+          git push origin
       - run: mkdocs build -c --site-dir site 
       - run: ghp-import site -p -x docs
       

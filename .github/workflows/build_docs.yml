@@ -3,17 +3,16 @@ on:
   push:
     branches:
       - main
-      - develop
 permissions:
   contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout develop repository
+      - name: Checkout main repository
         uses: actions/checkout@v3
         with:
-          ref: develop
+          ref: main
           fetch-depth: 0
       - name: Checkout gh-pages repository
         uses: actions/checkout@v3
@@ -35,6 +34,13 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: git branch -D origin/gh-pages
+      - run: pip install mkdocs-material 
+      - run: pip install ghp-import
+      - run: |
+          git fetch --all
+          git reset --hard origin/main
+          git merge -X theirs origin/main
+      - run: mkdocs build -c --site-dir site 
+      - run: ghp-import site -p -x docs
       
       

@@ -1,4 +1,5 @@
 site_name: NYU CTF Agent Documentation
+
 nav:
   - Home: index.md
   - Install: 

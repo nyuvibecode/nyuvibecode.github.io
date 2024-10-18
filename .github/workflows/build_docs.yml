@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git branch -d origin/gh-pages
+          git branch -d gh-pages
           continue-on-error: true
       - uses: actions/setup-python@v5
         with:

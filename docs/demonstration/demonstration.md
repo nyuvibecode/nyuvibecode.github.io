@@ -49,7 +49,7 @@ Let me share some key tips for tackling Pwn challenges:
 ```
 
 ### Step 2: Updating the Configuration File
-Add the path to the `pwn_hint.md` file in your configuration file (`config.yaml`), like this:
+Add the path to the `pwn_hint.md` file in your configuration file (`base_config.yaml`), like this:
 
 ```yaml
 demonstration:

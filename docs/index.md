@@ -41,7 +41,7 @@
 
     ---
 
-    TODO.
+    Demonstration of hint feature
 
     [:octicons-arrow-right-24: Example Runs](demonstration/demonstration.md)
 

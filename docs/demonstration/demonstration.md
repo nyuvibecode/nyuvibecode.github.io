@@ -2,7 +2,7 @@
 This section introduces the hint feature in our framework, which assists in guiding the model during Capture the Flag (CTF) challenges. The hint feature enhances the agent's ability to understand the context and scenario of the challenge, improving its efficiency in solving tasks. By passing hints during runtime, users can steer the model towards specific techniques, vulnerabilities, or strategies that are critical for solving particular challenges.
 
 ## Hint Feature Overview
-The hint feature can be enabled via the configuration file, allowing users to pass hints to the agent dynamically. These hints help the agent focus on key aspects of the CTF challenge, leading to improved performance and a deeper understanding of the context. The configuration file setup is described in detail [here](https://github.com/NYU-LLM-CTF/NYU-LLM-CTF.github.io/blob/main/docs/configuration/configs.md#configuration-file).
+The hint feature can be enabled via the configuration file, allowing users to pass hints to the agent dynamically. These hints help the agent focus on key aspects of the CTF challenge, leading to improved performance and a deeper understanding of the context. The configuration file setup is described in detail [here](https://nyu-llm-ctf.github.io/docs/configuration/configs/#configuration-file).
 
 ## Steps to Enable the Hint Feature
 To activate the hint feature within the framework, follow these steps:

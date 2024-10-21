@@ -6,8 +6,11 @@ nav:
     - installation/installation.md
   - Usage: 
     - usage/usage.md
-  - Configuration: 
-    - configuration/configuration.md
+  - Configuration:
+    - configuration/overview.md
+    - configuration/configs.md
+    - configuration/parameters.md
+    - configuration/logging.md
   - Demonstration: 
     - demonstration/demonstration.md
 hide:

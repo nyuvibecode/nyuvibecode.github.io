@@ -33,7 +33,7 @@
 
     TODO.
 
-    [:octicons-arrow-right-24: Modify LLM-CTF-Agent behavior](configuration/configuration.md)
+    [:octicons-arrow-right-24: Modify LLM-CTF-Agent behavior](configuration/overview.md)
 
 
 

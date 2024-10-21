@@ -1,4 +1,4 @@
-# Configuration
+# Configuration Contents
 
 1. [Config Setup](configs.md)
 2. [Parameters](parameters.md)

@@ -31,9 +31,9 @@
 
     ---
 
-    TODO.
+    Configuration of the agent.
 
-    [:octicons-arrow-right-24: Modify LLM-CTF-Agent behavior](configuration/overview.md)
+    [:octicons-arrow-right-24: Configuration](configuration/overview.md)
 
 
 

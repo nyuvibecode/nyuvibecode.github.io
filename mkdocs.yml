@@ -4,8 +4,9 @@ nav:
   - Home: index.md
   - Install: 
     - installation/installation.md
-  - Usage: 
-    - usage/usage.md
+  - Usage:
+    - usage/overview.md
+    - usage/framework.md
   - Configuration:
     - configuration/overview.md
     - configuration/configs.md

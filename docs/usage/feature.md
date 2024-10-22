@@ -39,8 +39,8 @@ model: "mistralai/Mixtral-8x7B-Instruct-v0.1"
 
 * `max-cost`: This is the maximum cost of the conversation, default in monetary terms is 10.
 
-![max-rounds](./images/max-rounds.png "max-rounds")
+![max_rounds](./images/max_rounds.png "max_rounds")
 
 * `skip-exist`: This feature will skip existing logs and experiments, useful for avoiding duplicates.
 
-![skip_exist](./images/max-rounds.png "skip_exist")
+![skip_exist](./images/skip_exist.png "skip_exist")

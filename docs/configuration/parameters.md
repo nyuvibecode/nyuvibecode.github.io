@@ -1,6 +1,6 @@
 # Parameters
 
-The following show all the parameters available for NYU CTF Agent
+The following show all the parameters available for LLM CTF Agent
 
 ## Parameters can only be configured by command line
 

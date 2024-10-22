@@ -31,7 +31,7 @@
 
     ---
 
-    Configuration of the agent.
+    Ways to change default configuration.
 
     [:octicons-arrow-right-24: Configuration](configuration/overview.md)
 

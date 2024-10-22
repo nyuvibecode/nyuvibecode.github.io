@@ -24,7 +24,7 @@
 
     How to use LLM CTF Agent.
 
-    [:octicons-arrow-right-24: Quick Start](usage/usage.md)
+    [:octicons-arrow-right-24: Quick Start](usage/overview.md)
 
 
 -   :material-cog:{ .lg .middle } __Configuration__

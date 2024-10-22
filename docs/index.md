@@ -22,7 +22,7 @@
 
     ---
 
-    TODO.
+    How to use LLM CTF Agent.
 
     [:octicons-arrow-right-24: Quick Start](usage/usage.md)
 
@@ -41,7 +41,7 @@
 
     ---
 
-    Demonstration of hint feature
+    Demonstration of hint feature.
 
     [:octicons-arrow-right-24: Example Runs](demonstration/demonstration.md)
 

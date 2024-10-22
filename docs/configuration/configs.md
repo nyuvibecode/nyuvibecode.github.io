@@ -1,6 +1,6 @@
 # Configuration Setup
 
-This section introduces two ways to config NYU CTF Agent, details the structure of configuration and ways to pass to the agent during the CTF Solving process. The available parameters can be found [here](parameters.md)
+This section introduces two ways to config LLM CTF Agent, details the structure of configuration and ways to pass to the agent during the CTF Solving process. The available parameters can be found [here](parameters.md)
 
 ## Command Line
 
@@ -27,7 +27,7 @@ This command calls the agent to solve challenge `2022q-pwn-ezrop` in NYU CTF Ben
 
 ## Configuration File
 
-The configuration file in NYU CTF Agent is a YAML format file. It is highly recommended to use configuration file to setup the parameters. One example of configuration file shows below:
+The configuration file in LLM CTF Agent is a YAML format file. It is highly recommended to use configuration file to setup the parameters. One example of configuration file shows below:
 
 ```yaml
 experiment:

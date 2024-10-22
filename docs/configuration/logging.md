@@ -2,7 +2,7 @@
 
 ## Format of logging directory
 
-All logs of NYU CTF Agent will be saved to the following directory
+All logs of LLM CTF Agent will be saved to the following directory
 
 ```
 {PATH_TO_ROOT_NYU_CTF_AGENT}/logs/{$USER}/{EXPERIMENT}
@@ -22,7 +22,7 @@ Users can also change the log directory to the desired location on the file syst
 
 ## Format of log
 
-The log file of NYU CTF Agent contains the following information
+The log file of LLM CTF Agent contains the following information
 
 * `args`: the arguments used for the experiment
 * `messages`: trajectories of the conversation record which contains all the conversation message with the message type, timestamp and the role of the message
@@ -36,7 +36,7 @@ The log file of NYU CTF Agent contains the following information
 
 ## Dump log
 
-To dump the log in `.json` format to `.html` which is ease to read for human, use the following command in the NYU CTF Agent root folder, package [ansi2html](https://github.com/pycontribs/ansi2html) needs to be installed on the system.
+To dump the log in `.json` format to `.html` which is ease to read for human, use the following command in the LLM CTF Agent root folder, package [ansi2html](https://github.com/pycontribs/ansi2html) needs to be installed on the system.
 
 ```
 python ./llm_ctf/dump_commands.py "{DUMP_LOG}" | ansi2html -l | sed 's/color: #AAAAAA;/color: #FFFFFF;/g' > "{OUTPUT_PATH}"/"{OUTPUT_HTML_NAME}"

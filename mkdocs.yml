@@ -7,6 +7,8 @@ nav:
   - Usage:
     - usage/overview.md
     - usage/framework.md
+    - usage/feature.md
+    - usage/logging.md
   - Configuration:
     - configuration/overview.md
     - configuration/configs.md

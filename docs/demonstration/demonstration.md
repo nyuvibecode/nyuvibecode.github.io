@@ -7,17 +7,17 @@ The hint feature can be enabled via the configuration file, allowing users to pa
 ## Steps to Enable the Hint Feature
 To activate the hint feature within the framework, follow these steps:
 
-1. **Create a Hint Directory:**
-   - In the base directory of your project, create a folder named `hints`. This will serve as the repository for all hint files that you want to provide to the agent.
+- **Create a Hint Directory:**
+    - In the base directory of your project, create a folder named `hints`. This will serve as the repository for all hint files that you want to provide to the agent.
    
-2. **Prepare Hint Files:**
+- **Prepare Hint Files:**
    - Write your hints in Markdown (MD) format. This allows for structured and readable hints. Each hint should focus on key guidance related to the CTF challenge (e.g., tips on exploitation, reverse engineering, or network analysis).
    - Save the Markdown files in the newly created `hints` folder.
 
-3. **Add Hint Files to the Configuration:**
+- **Add Hint Files to the Configuration:**
    - Once you have your hint files, include their paths in the configuration file (`base_config.yaml`) under the demonstration section. This tells the agent where to find and use the hints during runtime.
 
-4. **Run the Agent:**
+- **Run the Agent:**
    - After setting up the hints and updating the configuration file, run the agent. The agent will automatically reference your hints and display them in the hint prompt while running the CTF challenges.
 
 ## Example: Using the Hint Feature for a Pwn Challenge

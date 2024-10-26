@@ -6,7 +6,10 @@ nav:
     - installation/installation.md
   - Usage:
     - usage/overview.md
+    - usage/dataset.md
     - usage/framework.md
+    - usage/feature.md
+    - usage/logging.md
   - Configuration:
     - configuration/overview.md
     - configuration/configs.md

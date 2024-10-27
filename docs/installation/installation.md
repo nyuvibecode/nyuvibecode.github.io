@@ -9,4 +9,4 @@ Follow these instructions to setup:
 3. Install python dependencies: `python3 -m pip install -r requirements.txt`
 4. Run the setup script to build the docker image and create the network: `./setup.sh`
 5. Download the dataset (will take a few minutes): `python3 -m nyuctf.download`
-6. Create a file named `keys.cfg` to put your API key
+6. Create a file named `keys.cfg` to put your API key as specified [here](key.md)

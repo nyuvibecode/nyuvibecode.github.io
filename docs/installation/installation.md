@@ -12,7 +12,4 @@ Follow these instructions to setup:
 
 Below is a simple demonstration video
 
-<video width="320" height="240" controls>
-  <source src="./video/setup_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<video src="https://drive.google.com/file/d/1htRNHiMbai97Jc4fzov-6muNlLtZEPtR/view?usp=sharing"></video>

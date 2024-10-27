@@ -12,4 +12,4 @@ Follow these instructions to setup:
 
 Below is a simple demonstration video
 
-<video src="https://drive.google.com/file/d/1htRNHiMbai97Jc4fzov-6muNlLtZEPtR/view?usp=sharing"></video>
+<video src="video/setup_demo.mp4" controls="controls" width="500" height="300"></video>

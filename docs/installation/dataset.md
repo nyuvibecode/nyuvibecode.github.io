@@ -18,6 +18,11 @@ Challenges that require a server to host some challenge files are set up with a 
 The docker image is loaded directly using `docker compose up`.
 
 ## Setup 
+Clone the dataset:
+
+```
+git clone https://github.com/NYU-LLM-CTF/NYU_CTF_Bench.git
+```
 
 Install the python package:
 

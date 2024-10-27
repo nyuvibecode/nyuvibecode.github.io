@@ -12,4 +12,4 @@ Follow these instructions to setup:
 
 Below is a simple demonstration video
 
-<video src="../video/setup_demo.mp4" controls="controls" width="500" height="300"></video>
+<video src="../video/setup_demo.mp4" controls="controls" width="800" height="600"></video>

@@ -1,5 +1,4 @@
 # Installation Contents
 
-1. [Installation](framework)
+1. [Installation](installation.md)
 2. [Dataset Installation](dataset.md)
-3. [Framework Installation](framework.md)

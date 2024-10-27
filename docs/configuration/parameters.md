@@ -10,7 +10,7 @@ The following show all the parameters available for LLM CTF Agent
 * `--quiet`, `-q`, don't print messages to the console; suppresses output
 * `--container-image`, `-C`, the Docker image to use for the CTF environment, default is `ctfenv`
 * `--network`, `-N`, the Docker network to use for the CTF environment, default is `ctfnet`
-* `--api-key`, the API key to use when calling the model, defaults to `None`, it is recommended to use keys.cfg file to setup your api key, refer to the [installation section](../installation/installation.md)
+* `--api-key`, the API key to use when calling the model, defaults to `None`, it is recommended to use keys.cfg file to setup your api key, refer to the [installation section](../installation/framework)
 * `--api-endpoint`, the API endpoint URL to use when calling the model, defaults to `None`
 * `--formatter`, the prompt formatter to use, default is `xml`; options defined by `Formatter.registry.keys()`
 * `--disable-markdown`, disables rendering Markdown formatting in messages

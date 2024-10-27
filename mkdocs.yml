@@ -5,7 +5,7 @@ nav:
   - Install:
     - installation/overview.md
     - installation/dataset.md
-    - installation/installation.md
+    - installation/framework.md
   - Usage:
     - usage/overview.md
     - usage/dataset.md

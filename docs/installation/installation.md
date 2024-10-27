@@ -9,3 +9,6 @@ Follow these instructions to setup:
 3. Install python dependencies: `python3 -m pip install -r requirements.txt`
 4. Run the setup script to build the docker image and create the network: `./setup.sh`
 5. Download the dataset (will take a few minutes): `python3 -m nyuctf.download`
+
+Below is a simple demonstration video
+![](video/setup_demo.mov)

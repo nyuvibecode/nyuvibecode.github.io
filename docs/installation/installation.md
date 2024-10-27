@@ -11,4 +11,8 @@ Follow these instructions to setup:
 5. Download the dataset (will take a few minutes): `python3 -m nyuctf.download`
 
 Below is a simple demonstration video
-![](video/setup_demo.mov)
+
+<video width="320" height="240" controls>
+  <source src="./video/setup_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

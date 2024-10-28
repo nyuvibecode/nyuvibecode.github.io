@@ -1,4 +1,4 @@
-# Installation of LLM CTF Automation Framework
+# Framework Installation
 
 The setup requires docker to be installed on the system, please follow instructions for your OS. The code is tested with atleast python 3.10, earlier versions may work but it is not tested. It is recommended to create a virtualenv or conda environment for this setup.
 

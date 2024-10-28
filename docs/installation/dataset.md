@@ -1,4 +1,4 @@
-# Installation of NYU CTF Bench
+# NYU CTF Bench Setup
 
 NYU CTF Bench is a collection of CTF challenges from the CSAW CTF competitions, designed for evaluation of LLM agents.
 The CTF challenges are dockerized and easily deployable to allow an LLM-based automation framework to interact with the challenge and attempt a solution.

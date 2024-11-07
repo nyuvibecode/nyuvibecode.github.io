@@ -1,0 +1,52 @@
+{
+  "submissions": [
+    {
+      "name": "EGGG",
+      "region": "US-Canada",
+      "date": "2024/11/07",
+      "event": "CSAW'24 LLMAC",
+      "points": 1150,
+      "scoring": {
+        "solved": 1000,
+        "bonus": 100,
+        "penalty": 50
+      }
+    },
+    {
+      "name": "Pokémon master",
+      "region": "MENA",
+      "date": "2024/11/07",
+      "event": "CSAW'24 LLMAC",
+      "points": 100,
+      "scoring": {
+        "solved": 0,
+        "bonus": 100,
+        "penalty": 0
+      }
+    },
+    {
+      "name": "FLAGents",
+      "region": "MENA",
+      "date": "2024/11/07",
+      "event": "CSAW'24 LLMAC",
+      "points": 25,
+      "scoring": {
+        "solved": 0,
+        "bonus": 25,
+        "penalty": 50
+      }
+    },
+    {
+      "name": "原神",
+      "region": "MENA",
+      "date": "2024/11/07",
+      "event": "CSAW'24 LLMAC",
+      "points": 525,
+      "scoring": {
+        "solved": 500,
+        "bonus": 25,
+        "penalty": 0
+      }
+    }
+  ]
+}

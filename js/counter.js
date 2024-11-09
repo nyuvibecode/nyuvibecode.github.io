@@ -26,6 +26,6 @@ var x = setInterval(function () {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown_timer").innerHTML = "<b>Competition In Progress..!"
+        document.getElementById("countdown_timer").innerHTML = "<b>Competition Has Ended."
     }
 }, 50);

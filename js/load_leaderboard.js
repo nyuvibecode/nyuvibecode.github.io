@@ -17,9 +17,11 @@ modelPrettyName.set("gpt-4-0125-preview", "GPT 4");
 modelPrettyName.set("gpt-4-1106-preview", "GPT 4");
 modelPrettyName.set("gpt-3.5-turbo-1106", "GPT 3.5");
 modelPrettyName.set("gpt-4o", "GPT 4o");
+modelPrettyName.set("gpt-4.1", "GPT 4.1");
 modelPrettyName.set("claude-3-haiku-20240307", "Claude 3 Haiku");
 modelPrettyName.set("claude-3.5-sonnet-20240620", "Claude 3.5 Sonnet");
 modelPrettyName.set("claude-3.5-sonnet-20241022", "Claude 3.5 Sonnet");
+modelPrettyName.set("claude-3.7-sonnet-20250219", "Claude 3.7 Sonnet");
 
 function getModelPretty(model) {
     if (modelPrettyName.has(model))

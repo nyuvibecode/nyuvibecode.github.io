@@ -1,0 +1,18 @@
+{
+  "submissions": [
+    {
+      "name": "Example Team",
+      "region": "US-Canada",
+      "date": "2025/09/10",
+      "event": "CSAW'25 LLMAC",
+      "points": 0,
+      "scoring": {
+        "solved": 0,
+        "bonus": 0,
+        "penalty": 0,
+        "creativity": 0,
+        "presentation": 0
+      }
+    }
+  ]
+}

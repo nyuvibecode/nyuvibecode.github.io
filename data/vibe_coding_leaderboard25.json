@@ -1,0 +1,28 @@
+{
+  "dataset": {
+    "func": 20,
+    "doc_demo": 20,
+    "ui_ux": 20,
+    "impact": 20,
+    "readability": 20,
+    "total": 100
+  },
+  "submissions": [
+    {
+      "name": "EXAMPLE - Vibe Coding is Fun 123",
+      "comment": "The organizers are really cool",
+      "link": "https://make24-replit.onrender.com/",
+      "model": "Replit + Claude Sonnet 4",
+      "tech_stack": "React, TS, Tailwind, Express.js, ws",
+      "date": "2025/10/02",
+      "src_code": "https://github.com/nyuvibecode/VibeCodingResources/tree/main/examples/Replit-Make24",
+      "per_category": {
+        "func": 1,
+        "doc_demo": 1,
+        "ui_ux": 1,
+        "impact": 1,
+        "readability": 1
+      }
+    }
+  ]
+}

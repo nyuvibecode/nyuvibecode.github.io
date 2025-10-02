@@ -12,17 +12,6 @@ function loadLeaderboard(json) {
         .catch(error => console.error('Error loading the leaderboard:', error));
 }
 
-const modelPrettyName = new Map();
-modelPrettyName.set("gpt-4-0125-preview", "GPT 4");
-modelPrettyName.set("gpt-4-1106-preview", "GPT 4");
-modelPrettyName.set("gpt-3.5-turbo-1106", "GPT 3.5");
-modelPrettyName.set("gpt-4o", "GPT 4o");
-modelPrettyName.set("gpt-4.1", "GPT 4.1");
-modelPrettyName.set("claude-3-haiku-20240307", "Claude 3 Haiku");
-modelPrettyName.set("claude-3.5-sonnet-20240620", "Claude 3.5 Sonnet");
-modelPrettyName.set("claude-3.5-sonnet-20241022", "Claude 3.5 Sonnet");
-modelPrettyName.set("claude-3.7-sonnet-20250219", "Claude 3.7 Sonnet");
-
 function getModelPretty(model) {
     if (modelPrettyName.has(model))
         return modelPrettyName.get(model);
@@ -40,20 +29,21 @@ function updateLeaderboardTable(data) {
         leaderboardLoader.classList.remove('is-hidden');
     }
 
-
     leaderboardTableBody.innerHTML = ''; // Clear existing rows
     data.submissions.sort((a, b) => {return a.solved - b.solved;}).reverse();
 
     data.submissions.forEach((item, index) => {
         const row = document.createElement('tr');
-        const score = (item.solved / data.dataset.total * 100).toFixed(2);
+        const totalSolved = Object.values(item.per_category).reduce((sum, val) => sum + val, 0);
+        const score = (totalSolved / data.dataset.total * 100).toFixed(2);
         row.innerHTML = `
             <td>${index + 1}</td>
             <td>${item.name} <i>${item.comment}</i></td>
-            <td>${getModelPretty(item.model)}</td>
+            <td>${item.model}</td>
+            <td>${item.tech_stack}</td>
             <td>${score}%</td>
-            <td><a class="animsition-link" href="${item.logs}">🔗</a></td>
-            <td><a class="animsition-link" href="${item.link}">🔗</a></td>
+            <td><a href="${item.src_code}">💻</a></td>
+            <td><a href="${item.link}">🔗</a></td>
         `;
         leaderboardTableBody.appendChild(row);
     });

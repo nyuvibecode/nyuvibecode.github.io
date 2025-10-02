@@ -10,7 +10,7 @@
   "submissions": [
     {
       "name": "EXAMPLE - Vibe Coding is Fun 123",
-      "comment": "The organizers are really cool",
+      "comment": "The organizers are very *special*",
       "link": "https://make24-replit.onrender.com/",
       "model": "Replit + Claude Sonnet 4",
       "tech_stack": "React, TS, Tailwind, Express.js, ws",

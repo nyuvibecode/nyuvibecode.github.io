@@ -42,7 +42,7 @@ function updateLeaderboardTable(data) {
             <td>${item.model}</td>
             <td>${item.tech_stack}</td>
             <td>${score}%</td>
-            <td><a href="${item.src_code}">💻</a></td>
+            <td><a href="${item.src_code}">📁</a></td>
             <td><a href="${item.link}">🔗</a></td>
         `;
         leaderboardTableBody.appendChild(row);

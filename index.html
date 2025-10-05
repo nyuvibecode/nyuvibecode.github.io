@@ -25,7 +25,7 @@
         <nav class="tabs is-center">
             <a href="https://nyuvibecode.vercel.app">🏠 Back to Main Site</a>
             <a href="#about">📋 About</a>
-            <a href="#leaderboard">🥇 Leaderboard</a>
+            <a href="#submissions">📝 Submissions</a>
             <a href="#rubric">🧭 Rubric</a>
             <a href="#demos">🎥 Demo Videos</a>
             <!-- <a href="#schedule">📅 Schedule</a>
@@ -39,7 +39,7 @@
                     <h3>About the Hackathon</h3>
                     <hr>
                     <p>
-                    Welcome to the &#128126; 2025 Vibe Coding Hackathon! This is the live leaderboard where you can track the real-time progress of all participating teams as they build amazing projects!
+                    Welcome to the &#128126; 2025 Vibe Coding Hackathon! Here you can view all the amazing projects submitted by our participants and explore their innovative solutions!
                     </p>
                 </div>
             </div>
@@ -47,17 +47,16 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="card" id="card_leaderboard">
-                    <h3>Live Leaderboard</h3><a name="leaderboard"></a>
+                <div class="card" id="card_submissions">
+                    <h3>Project Submissions</h3><a name="submissions"></a>
                     <hr>
-                    <p>Track the real-time progress of all participating teams as they build amazing projects!</p>
-                    <table id="leaderboard">
+                    <p>View all the amazing projects submitted by our hackathon participants!</p>
+                    <table id="submissions">
                         <thead class="bg-primary text-light">
-                            <th>#</th>
+                            <th>Date Submitted</th>
                             <th>Team</th>
                             <th>Model(s)</th>
                             <th>Tech Stack</th>
-                            <th>Score</th>
                             <th>Code</th>
                             <th>Link</th>
                         </thead>
@@ -65,7 +64,7 @@
 
                         </tbody>
                     </table>
-                    <div id="leaderboard_loader" class="loader"></div>
+                    <div id="submissions_loader" class="loader"></div>
                 </div>
             </div>
         </div>

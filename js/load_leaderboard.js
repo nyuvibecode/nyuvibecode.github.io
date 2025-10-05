@@ -19,35 +19,58 @@ function getModelPretty(model) {
 }
 
 function updateLeaderboardTable(data) {
-    const leaderboardLoader = document.querySelector('#leaderboard_loader');
-    const leaderboardTableBody = document.querySelector('#leaderboard tbody');
+    const submissionsLoader = document.querySelector('#submissions_loader');
+    const submissionsTableBody = document.querySelector('#submissions tbody');
 
-    if (!leaderboardTableBody.classList.contains('is-hidden')) {
-        leaderboardTableBody.classList.add('is-hidden');
+    if (!submissionsTableBody.classList.contains('is-hidden')) {
+        submissionsTableBody.classList.add('is-hidden');
     }
-    if (leaderboardLoader.classList.contains('is-hidden')) {
-        leaderboardLoader.classList.remove('is-hidden');
+    if (submissionsLoader.classList.contains('is-hidden')) {
+        submissionsLoader.classList.remove('is-hidden');
     }
 
-    leaderboardTableBody.innerHTML = ''; // Clear existing rows
-    data.submissions.sort((a, b) => {return a.solved - b.solved;}).reverse();
+    submissionsTableBody.innerHTML = ''; // Clear existing rows
+    
+    // Sort by date (most recent first)
+    data.submissions.sort((a, b) => {
+        const dateA = new Date(a.date.replace(/\//g, '-'));
+        const dateB = new Date(b.date.replace(/\//g, '-'));
+        return dateB - dateA; // Most recent first
+    });
 
     data.submissions.forEach((item, index) => {
         const row = document.createElement('tr');
-        const totalSolved = Object.values(item.per_category).reduce((sum, val) => sum + val, 0);
-        const score = (totalSolved / data.dataset.total * 100).toFixed(2);
+        // Format the date for display - handle different date formats
+        let formattedDate;
+        try {
+            // Try to parse the date
+            const date = new Date(item.date.replace(/\//g, '-')); // Convert yyyy/mm/dd to yyyy-mm-dd for better parsing
+            if (isNaN(date.getTime())) {
+                // If date parsing fails, just show the original date string
+                formattedDate = item.date;
+            } else {
+                formattedDate = date.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                });
+            }
+        } catch (e) {
+            // If any error occurs, just show the original date string
+            formattedDate = item.date;
+        }
+        
         row.innerHTML = `
-            <td>${index + 1}</td>
+            <td>${formattedDate}</td>
             <td>${item.name} <i>${item.comment}</i></td>
             <td>${item.model}</td>
             <td>${item.tech_stack}</td>
-            <td>${score}%</td>
             <td><a href="${item.src_code}">📁</a></td>
             <td><a href="${item.link}">🔗</a></td>
         `;
-        leaderboardTableBody.appendChild(row);
+        submissionsTableBody.appendChild(row);
     });
 
-    leaderboardTableBody.classList.remove('is-hidden');
-    leaderboardLoader.classList.add('is-hidden');
+    submissionsTableBody.classList.remove('is-hidden');
+    submissionsLoader.classList.add('is-hidden');
 }

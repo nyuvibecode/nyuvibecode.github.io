@@ -23,6 +23,24 @@
         "impact": 1,
         "readability": 1
       }
+    },
+    {
+      "name": "Pumpking",
+      "comment": "Coming soon landing page",
+      "link": "/milestone-1/pumpking/",
+      "model": "ChatGPT 5",
+      "tech_stack": "HTML, Tailwind CSS",
+      "date": "2025/10/08",
+      "src_code": "https://github.com/Nan714/dear-bloom",
+      "per_category": {
+        "func": 1,
+        "doc_demo": 1,
+        "ui_ux": 1,
+        "impact": 1,
+        "readability": 1
+      }
     }
   ]
 }
+
+

@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    loadLeaderboard(leaderboardFile);
+    loadProjects(projectsFile);
 });
 
-function loadLeaderboard(json) {
+function loadProjects(json) {
     fetch(json)
         .then(response => response.json())
         .then(data => {
-            updateLeaderboardTable(data);
+            updateProjectsTable(data);
             // updateDatasetSummary(data.dataset);
         })
-        .catch(error => console.error('Error loading the leaderboard:', error));
+        .catch(error => console.error('Error loading the projects:', error));
 }
 
 function getModelPretty(model) {
@@ -18,7 +18,7 @@ function getModelPretty(model) {
     return model;
 }
 
-function updateLeaderboardTable(data) {
+function updateProjectsTable(data) {
     const submissionsLoader = document.querySelector('#submissions_loader');
     const submissionsTableBody = document.querySelector('#submissions tbody');
 
@@ -29,34 +29,21 @@ function updateLeaderboardTable(data) {
         submissionsLoader.classList.remove('is-hidden');
     }
 
-    submissionsTableBody.innerHTML = ''; // Clear existing rows
+    submissionsTableBody.innerHTML = '';
     
-    // Sort by date (most recent first)
     data.submissions.sort((a, b) => {
         const dateA = new Date(a.date.replace(/\//g, '-'));
         const dateB = new Date(b.date.replace(/\//g, '-'));
-        return dateB - dateA; // Most recent first
+        return dateB - dateA;
     });
 
-    data.submissions.forEach((item, index) => {
+    data.submissions.forEach((item) => {
         const row = document.createElement('tr');
-        // Format the date for display - handle different date formats
         let formattedDate;
         try {
-            // Try to parse the date
-            const date = new Date(item.date.replace(/\//g, '-')); // Convert yyyy/mm/dd to yyyy-mm-dd for better parsing
-            if (isNaN(date.getTime())) {
-                // If date parsing fails, just show the original date string
-                formattedDate = item.date;
-            } else {
-                formattedDate = date.toLocaleDateString('en-US', { 
-                    year: 'numeric', 
-                    month: 'short', 
-                    day: 'numeric' 
-                });
-            }
+            const date = new Date(item.date.replace(/\//g, '-'));
+            formattedDate = isNaN(date.getTime()) ? item.date : date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
         } catch (e) {
-            // If any error occurs, just show the original date string
             formattedDate = item.date;
         }
         
@@ -74,3 +61,5 @@ function updateLeaderboardTable(data) {
     submissionsTableBody.classList.remove('is-hidden');
     submissionsLoader.classList.add('is-hidden');
 }
+
+

@@ -28,19 +28,19 @@
       "name": "Pumpking",
       "comment": "Coming soon landing page",
       "link": "/milestone-1/pumpking/",
-      "model": "ChatGPT 5",
+      "model": "ChatGPT GPT-5",
       "tech_stack": "HTML, Tailwind CSS",
-      "date": "2025/10/08",
+      "date": "2025/10/07",
       "src_code": "https://github.com/Nan714/dear-bloom",
-      "per_category": {
-        "func": 1,
-        "doc_demo": 1,
-        "ui_ux": 1,
-        "impact": 1,
-        "readability": 1
-      }
+    },
+    {
+      "name": "Berserk",
+      "comment": "Flight Tracker Pomodoro - Real World Explorer",
+      "link": "https://studio--studio-6357652728-57ff0.us-central1.hosted.app/",
+      "model": "Gemini 2.5 Flash (Firebase Studio)",
+      "tech_stack": "HTML, Tailwind CSS",
+      "date": "2025/10/09",
+      "src_code": "https://github.com/Uzi78/Flight-Tracker-Pomodoro"
     }
   ]
 }
-
-

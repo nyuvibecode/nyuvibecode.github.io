@@ -32,6 +32,7 @@
       "tech_stack": "HTML, Tailwind CSS",
       "date": "2025/10/07",
       "src_code": "https://github.com/Nan714/dear-bloom",
+      "demo_video": null
     },
     {
       "name": "Berserk",
@@ -40,7 +41,8 @@
       "model": "Gemini 2.5 Flash (Firebase Studio)",
       "tech_stack": "HTML, Tailwind CSS",
       "date": "2025/10/09",
-      "src_code": "https://github.com/Uzi78/Flight-Tracker-Pomodoro"
+      "src_code": "https://github.com/Uzi78/Flight-Tracker-Pomodoro",
+      "demo_video": null
     }
   ]
 }

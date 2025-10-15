@@ -1,0 +1,20 @@
+site_name: "Vibe Coding Hackathon Docs"
+site_description: "Documentation and submissions for the 2025 Vibe Coding Hackathon"
+site_author: "NYU Vibe Code"
+nav:
+  - Home: index.md
+  - Submissions:
+      - Overview: submissions.md
+      - Performance & Functionality: submissions/performance-and-functionality.md
+      - Prompts: submissions/prompts.md
+  - Rubric: rubric.md
+theme:
+  name: material
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.superfences

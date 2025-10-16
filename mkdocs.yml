@@ -1,6 +1,7 @@
 site_name: "Vibe Coding Hackathon Docs"
 site_description: "Documentation and submissions for the 2025 Vibe Coding Hackathon"
-site_author: "NYU Vibe Code"
+site_author: "NYU Vibe Coding Hackathon"
+
 nav:
   - Docs: index.md
   - Submissions:
@@ -12,15 +13,22 @@ theme:
   name: material
   language: en
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: indigo
+    accent: indigo
   features:
     - navigation.instant
     - navigation.top
+    - navigation.footer
+    - search.highlight
     - header.autohide
     - content.code.copy
 markdown_extensions:
-  - toc:
-      permalink: true
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.superfences
+
+repo_url: https://github.com/NYU-LLM-CTF/NYU-LLM-CTF.github.io 

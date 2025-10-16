@@ -11,14 +11,14 @@ nav:
   - Rubric: rubric.md
 
 theme:
-  logo: assets/readme_assets/tiny_spid.png
+  logo: assets/images/favicon.png
   features:
   - navigation.footer
   - search.highlight
   name: material
   palette:
-    primary: light green
-    accent: lime
+    primary: indigo
+    accent: indigo
 plugins: []
 markdown_extensions:
   - md_in_html

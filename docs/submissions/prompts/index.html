@@ -61,7 +61,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="lime">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -87,7 +87,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Vibe Coding Hackathon Docs" class="md-header__button md-logo" aria-label="Vibe Coding Hackathon Docs" data-md-component="logo">
       
-  <img src="../../assets/readme_assets/tiny_spid.png" alt="logo">
+  <img src="../../assets/images/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -151,7 +151,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Vibe Coding Hackathon Docs" class="md-nav__button md-logo" aria-label="Vibe Coding Hackathon Docs" data-md-component="logo">
       
-  <img src="../../assets/readme_assets/tiny_spid.png" alt="logo">
+  <img src="../../assets/images/favicon.png" alt="logo">
 
     </a>
     Vibe Coding Hackathon Docs
@@ -326,47 +326,46 @@
 
 
 
-<h1 id="overview">Overview</h1>
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
 <p>Below are some recommended formats for prompt submission. These are not a strict requirement, but following the format will contribute to your readability score.</p>
-<h1 id="formats">Formats</h1>
-<h2 id="plaintextmarkdown">Plaintext/Markdown</h2>
-<p>In a plaintext file, markdown, Google Doc, or Word Doc. Do not submit a PDF. <!--We have also provided a <a href="tmp">script</a> to convert HTML to MD.--></p>
-<pre><code class="language-markdown">[User]
+<h1 id="formats">Formats<a class="headerlink" href="#formats" title="Permanent link">&para;</a></h1>
+<h2 id="plaintextmarkdown">Plaintext/Markdown<a class="headerlink" href="#plaintextmarkdown" title="Permanent link">&para;</a></h2>
+<p>In a plaintext file, markdown, Google Doc, or Word Doc. Do not submit a PDF. <!--We have also provided a <a href="tmp">script</a> to convert HTML to MD.-->
+<div class="highlight"><pre><span></span><code>[User]
 
 instruction:
 
 Summarize the news article provided below.
 
-# Supermarkets in France
+<span class="gh"># Supermarkets in France</span>
 Supermarket customers in France can add airline tickets to their shopping lists thanks to a unique promotion by a budget airline. 
 
-## Shopping List Examples
-1. In a supermarket, they sell madeleines.
-2. In another supermarket, they sell other French goods.
+<span class="gu">## Shopping List Examples</span>
+<span class="k">1.</span> In a supermarket, they sell madeleines.
+<span class="k">2.</span> In another supermarket, they sell other French goods.
 
-# Another section
+<span class="gh"># Another section</span>
 Based at the airport, new airline launched in 2007 and is a low-cost subsidiary of the airline.
 
 [LLM, Gemini, ChatGPT]
 
 New airline has included voucher codes with the branded products ... to pay a booking fee and checked baggage fees.
-
-</code></pre>
-<h2 id="json">JSON</h2>
-<pre><code class="language-json">{
-    &quot;system&quot;: &quot;Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.&quot;,
-    &quot;messages&quot;: [
-        {
-            &quot;role&quot;: &quot;user&quot;,
-            &quot;content&quot;: &quot;instruction:\n\nSummarize the news article provided below.\n\ninput:\nSupermarket customers in France can add airline tickets to their shopping lists thanks to a unique promotion by a budget airline. ... Based at the airport, new airline launched in 2007 and is a low-cost subsidiary of the airline.&quot;
-        },
-        {
-            &quot;role&quot;: &quot;assistant&quot;,
-            &quot;content&quot;: &quot;New airline has included voucher codes with the branded products ... to pay a booking fee and checked baggage fees .&quot;
-        }
-    ]
-}
-</code></pre>
+</code></pre></div></p>
+<h2 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;messages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;instruction:\n\nSummarize the news article provided below.\n\ninput:\nSupermarket customers in France can add airline tickets to their shopping lists thanks to a unique promotion by a budget airline. ... Based at the airport, new airline launched in 2007 and is a low-cost subsidiary of the airline.&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assistant&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;New airline has included voucher codes with the branded products ... to pay a booking fee and checked baggage fees .&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
@@ -442,7 +441,7 @@ New airline has included voucher codes with the branded products ... to pay a bo
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "search.highlight", "header.autohide"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "search.highlight"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>

@@ -3,7 +3,7 @@ Below are some recommended formats for prompt submission. These are not a strict
 
 # Formats
 ## Plaintext/Markdown
-In a plaintext file, markdown, Google Doc, or Word Doc. Do not submit a PDF. <!--We have also provided a [script](tmp) to convert HTML to MD.-->
+In a plaintext file, markdown, Google Doc, or Word Doc. Do not submit a PDF. We have also provided a [script](/helpful_scripts/html_to_md_converter.py) to convert HTML to MD.
 ```markdown
 [User]
 

@@ -21,7 +21,7 @@ Supermarket customers in France can add airline tickets to their shopping lists 
 # Another section
 Based at the airport, new airline launched in 2007 and is a low-cost subsidiary of the airline.
 
-[LLM, Gemini, ChatGPT]
+[LLM (e.g. Gemini, ChatGPT)]
 
 New airline has included voucher codes with the branded products ... to pay a booking fee and checked baggage fees.
 

@@ -23,7 +23,7 @@
       "comment": "Berserk",
       "link": "https://studio--studio-6357652728-57ff0.us-central1.hosted.app/",
       "model": "Gemini 2.5 Flash (Firebase Studio)",
-      "tech_stack": "",
+      "tech_stack": "Next.js",
       "date": "2025/10/09",
       "src_code": "https://github.com/Uzi78/Flight-Tracker-Pomodoro",
       "demo_video": "https://youtu.be/_QcaboFGiqk?si=-k26Km5jrCsUnfKS"
@@ -42,10 +42,10 @@
       "name": "Solosignal",
       "comment": "Solosignal",
       "link": "https://claude.ai/share/c054fcfb-3b3d-4f12-93cd-b3d63d0f7b5a",
-      "model": "claude 4.5",
-      "tech_stack": "",
+      "model": "Claude 4.5",
+      "tech_stack": "HTML, JS",
       "date": "2025/10/12",
-      "src_code": "https://docs.google.com/document/d/1Wc80Iv5os2bsGexFSYaDgglvETiNNf16hsYXA2FrdaI/edit?usp=sharing",
+      "src_code": "https://claude.ai/share/c054fcfb-3b3d-4f12-93cd-b3d63d0f7b5a",
       "demo_video": "https://www.loom.com/share/35acf81ed5db420aa25adfd119f86dff"
     },
     {
@@ -63,9 +63,9 @@
       "comment": "Phish-n-go",
       "link": "https://phish-n-go.vercel.app/",
       "model": "Gemini 2.5 Pro",
-      "tech_stack": "",
+      "tech_stack": "TypeScript",
       "date": "2025/10/14",
-      "src_code": "https://drive.google.com/drive/folders/1qhYAcDyUAgyLIXbkwLmGNbwtnS7Xx90u?usp=sharing",
+      "src_code": "https://github.com/syedmuhdhafidz/Phish-n-Go",
       "demo_video": "https://drive.google.com/file/d/1Bec9rQEfjFeHh9w2JprHJQ2ViXo6o54c/view?usp=sharing"
     },
     {
@@ -73,7 +73,7 @@
       "comment": "Vaulter",
       "link": "https://vaulter-nine.vercel.app/",
       "model": "Claude Sonnet 4.5",
-      "tech_stack": "",
+      "tech_stack": "JavaScript",
       "date": "2025/10/14",
       "src_code": "https://github.com/faris-sait/Vaulter",
       "demo_video": "https://drive.google.com/file/d/1T9CdQHCi6ENAjyaWCeXTWeQ9vY3ZFVUA/view?usp=drivesdk"
@@ -83,7 +83,7 @@
       "comment": "Cold Email Helper",
       "link": "https://aforaiza.github.io/coldemailhelper/",
       "model": "ChatGPT 5",
-      "tech_stack": "",
+      "tech_stack": "HTML, CSS, JS",
       "date": "2025/10/14",
       "src_code": "https://github.com/aforaiza/coldemailhelper",
       "demo_video": "https://screenapp.io/app/v/Oi3sVCi3de"
@@ -113,7 +113,7 @@
       "comment": "Shrinking Circle Challenge",
       "link": "https://vibe-coding-seven-sooty.vercel.app/",
       "model": "Cursor",
-      "tech_stack": "",
+      "tech_stack": "HTML, CSS, JS",
       "date": "2025/10/15",
       "src_code": "https://github.com/hkhamzaa123/VibeCoding",
       "demo_video": "https://drive.google.com/file/d/1gwdurB2hhB2QLoyK3FfhIqID91355uY8/view?usp=drive_link"
@@ -133,7 +133,7 @@
       "comment": "Footprint Forward",
       "link": "https://footprint-forward-ngfj5rqyt-sharoorehan689-netizens-projects.vercel.app/",
       "model": "Gemini 2.5 Flash",
-      "tech_stack": "",
+      "tech_stack": "TS, Next",
       "date": "2025/10/15",
       "src_code": "https://github.com/sharoorehan689-netizen/Footprint-Forward",
       "demo_video": "youtube.com/watch?v=Dl3EKKswKFU&feature=youtu.be"
@@ -152,8 +152,8 @@
       "name": "Team Mini",
       "comment": "Team Mini",
       "link": "Blood Pressure & Medicine Reminder App",
-      "model": "ChatGPT - 5",
-      "tech_stack": "",
+      "model": "ChatGPT 5",
+      "tech_stack": "JS, React",
       "date": "2025/10/15",
       "src_code": "https://github.com/minahilhasan/bp-management-webpage.git",
       "demo_video": "https://www.loom.com/share/9df1f690d768466d85a8a905cd393d69?sid=14d1b6ca-aaba-4066-a9dc-e86115b81c5f"
@@ -162,8 +162,8 @@
       "name": "08-145 Offensive Bias",
       "comment": "Neon Arcade Games",
       "link": "https://neon-arcade-games.lovable.app/",
-      "model": "",
-      "tech_stack": "",
+      "model": "Lovable",
+      "tech_stack": "React",
       "date": "2025/10/15",
       "src_code": "https://github.com/HassanNaeem2003/neon-arcade-games",
       "demo_video": "https://drive.google.com/drive/folders/163Fl6V8-M1zEUsyxHoOm-07A7aqIp_5G?usp=sharing"
@@ -172,7 +172,7 @@
       "name": "(Salma)^2",
       "comment": "GiveNTake",
       "link": "giventake3.me",
-      "model": "Github Copilot (Gpt-5-mini & 4 and Claude sonnet 4.5), Gemini Pro, Chatgpt 5 and Fire base studio and Cursor",
+      "model": "GPT-5 mini, GPT 4, Claude Sonnet 4.5, Gemini Pro, ChatGPT 5, Firebase Studio, Cursor",
       "tech_stack": "",
       "date": "2025/10/16",
       "src_code": "https://github.com/SalmaAlsaghir/GiveNTake",

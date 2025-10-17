@@ -10,39 +10,173 @@
   "submissions": [
     {
       "name": "EXAMPLE - Vibe Coding is Fun 123",
-      "comment": "The organizers are very *special*",
+      "comment": "EXAMPLE - Vibe Coding is Fun 123",
       "link": "https://make24-replit.onrender.com/",
       "model": "Replit + Claude Sonnet 4",
       "tech_stack": "React, TS, Tailwind, Express.js, ws",
       "date": "2025/10/02",
       "src_code": "https://github.com/nyuvibecode/VibeCodingResources/tree/main/examples/Replit-Make24",
-      "per_category": {
-        "func": 1,
-        "doc_demo": 1,
-        "ui_ux": 1,
-        "impact": 1,
-        "readability": 1
-      }
-    },
-    {
-      "name": "Pumpking",
-      "comment": "Coming soon landing page",
-      "link": "/milestone-1/pumpking/",
-      "model": "ChatGPT GPT-5",
-      "tech_stack": "HTML, Tailwind CSS",
-      "date": "2025/10/07",
-      "src_code": "https://github.com/Nan714/dear-bloom",
-      "demo_video": null
+      "demo_video": ""
     },
     {
       "name": "Berserk",
-      "comment": "Flight Tracker Pomodoro - Real World Explorer",
+      "comment": "Berserk",
       "link": "https://studio--studio-6357652728-57ff0.us-central1.hosted.app/",
       "model": "Gemini 2.5 Flash (Firebase Studio)",
-      "tech_stack": "HTML, Tailwind CSS",
+      "tech_stack": "",
       "date": "2025/10/09",
       "src_code": "https://github.com/Uzi78/Flight-Tracker-Pomodoro",
+      "demo_video": "https://youtu.be/_QcaboFGiqk?si=-k26Km5jrCsUnfKS"
+    },
+    {
+      "name": "BuildIfy.AI",
+      "comment": "BuildIfy.AI",
+      "link": "https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221J2ThWmixykgFmlXWAwEBHBNxNVUynwuq%22%5D,%22action%22:%22open%22,%22userId%22:%22116691967726561935386%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing",
+      "model": "ChatGPT, Google AI Studio",
+      "tech_stack": "React",
+      "date": "2025/10/11",
+      "src_code": "https://github.com/Mariam28-4-2005/smart-waste-ai",
+      "demo_video": "https://youtube.com/shorts/kGtU6QW1Bxc?feature=shared"
+    },
+    {
+      "name": "Solosignal",
+      "comment": "Solosignal",
+      "link": "https://claude.ai/share/c054fcfb-3b3d-4f12-93cd-b3d63d0f7b5a",
+      "model": "claude 4.5",
+      "tech_stack": "",
+      "date": "2025/10/12",
+      "src_code": "https://docs.google.com/document/d/1Wc80Iv5os2bsGexFSYaDgglvETiNNf16hsYXA2FrdaI/edit?usp=sharing",
+      "demo_video": "https://www.loom.com/share/35acf81ed5db420aa25adfd119f86dff"
+    },
+    {
+      "name": "Pumpking",
+      "comment": "Pumpking",
+      "link": "/milestone-1/pumpking/",
+      "model": "ChatGPT 5.0",
+      "tech_stack": "HTML, CSS, JS",
+      "date": "2025/10/13",
+      "src_code": "https://drive.google.com/drive/folders/11XkKIU9B_JY4nmMM7d13O4S7hOuo43Mq?usp=sharing",
+      "demo_video": ""
+    },
+    {
+      "name": "Code Vibing",
+      "comment": "Phish-n-go",
+      "link": "https://phish-n-go.vercel.app/",
+      "model": "Gemini 2.5 Pro",
+      "tech_stack": "",
+      "date": "2025/10/14",
+      "src_code": "https://drive.google.com/drive/folders/1qhYAcDyUAgyLIXbkwLmGNbwtnS7Xx90u?usp=sharing",
+      "demo_video": "https://drive.google.com/file/d/1Bec9rQEfjFeHh9w2JprHJQ2ViXo6o54c/view?usp=sharing"
+    },
+    {
+      "name": "API MAFIAS",
+      "comment": "Vaulter",
+      "link": "https://vaulter-nine.vercel.app/",
+      "model": "Claude Sonnet 4.5",
+      "tech_stack": "",
+      "date": "2025/10/14",
+      "src_code": "https://github.com/faris-sait/Vaulter",
+      "demo_video": "https://drive.google.com/file/d/1T9CdQHCi6ENAjyaWCeXTWeQ9vY3ZFVUA/view?usp=drivesdk"
+    },
+    {
+      "name": "Triangle",
+      "comment": "Cold Email Helper",
+      "link": "https://aforaiza.github.io/coldemailhelper/",
+      "model": "ChatGPT 5",
+      "tech_stack": "",
+      "date": "2025/10/14",
+      "src_code": "https://github.com/aforaiza/coldemailhelper",
+      "demo_video": "https://screenapp.io/app/v/Oi3sVCi3de"
+    },
+    {
+      "name": "No Clue",
+      "comment": "Duel AI",
+      "link": "https://duel-cj5vt5kb1-mohammeds-projects-0a911249.vercel.app/",
+      "model": "Claude Sonnet 4.5",
+      "tech_stack": "",
+      "date": "2025/10/14",
+      "src_code": "https://github.com/ZeroQLi/duel-ai",
       "demo_video": null
+    },
+    {
+      "name": "lovecan",
+      "comment": "lovecan",
+      "link": "",
+      "model": "Cursor, Claude Sonnet 4.5, ChatGPT",
+      "tech_stack": "Python, HTML, JS",
+      "date": "2025/10/15",
+      "src_code": "https://drive.google.com/drive/folders/1-hTJR-n9d9TWIHxN45UWPZlDoTpdUJtL?usp=sharing",
+      "demo_video": "https://drive.google.com/file/d/1dHDioAVtBHPW2Wh7XHvP7oxXrQ5sEx3Q/view?usp=sharing"
+    },
+    {
+      "name": "spartans",
+      "comment": "Shrinking Circle Challenge",
+      "link": "https://vibe-coding-seven-sooty.vercel.app/",
+      "model": "Cursor",
+      "tech_stack": "",
+      "date": "2025/10/15",
+      "src_code": "https://github.com/hkhamzaa123/VibeCoding",
+      "demo_video": "https://drive.google.com/file/d/1gwdurB2hhB2QLoyK3FfhIqID91355uY8/view?usp=drive_link"
+    },
+    {
+      "name": "Coders",
+      "comment": "Rides App",
+      "link": "",
+      "model": "ChatGPT",
+      "tech_stack": "",
+      "date": "2025/10/15",
+      "src_code": "https://github.com/Salah-P/Hackathon",
+      "demo_video": ""
+    },
+    {
+      "name": "Dark Vanguard",
+      "comment": "Footprint Forward",
+      "link": "https://footprint-forward-ngfj5rqyt-sharoorehan689-netizens-projects.vercel.app/",
+      "model": "Gemini 2.5 Flash",
+      "tech_stack": "",
+      "date": "2025/10/15",
+      "src_code": "https://github.com/sharoorehan689-netizen/Footprint-Forward",
+      "demo_video": "youtube.com/watch?v=Dl3EKKswKFU&feature=youtu.be"
+    },
+    {
+      "name": "VoxAI",
+      "comment": "",
+      "link": "",
+      "model": "Claude",
+      "tech_stack": "",
+      "date": "2025/10/15",
+      "src_code": "",
+      "demo_video": "https://www.loom.com/share/7072e7318ca9409487d777b1f57c50fd?sid=886ebd07-e5a2-46f2-a5f8-214cfd1ec340"
+    },
+    {
+      "name": "Team Mini",
+      "comment": "Team Mini",
+      "link": "Blood Pressure & Medicine Reminder App",
+      "model": "ChatGPT - 5",
+      "tech_stack": "",
+      "date": "2025/10/15",
+      "src_code": "https://github.com/minahilhasan/bp-management-webpage.git",
+      "demo_video": "https://www.loom.com/share/9df1f690d768466d85a8a905cd393d69?sid=14d1b6ca-aaba-4066-a9dc-e86115b81c5f"
+    },
+    {
+      "name": "08-145 Offensive Bias",
+      "comment": "Neon Arcade Games",
+      "link": "https://neon-arcade-games.lovable.app/",
+      "model": "",
+      "tech_stack": "",
+      "date": "2025/10/15",
+      "src_code": "https://github.com/HassanNaeem2003/neon-arcade-games",
+      "demo_video": "https://drive.google.com/drive/folders/163Fl6V8-M1zEUsyxHoOm-07A7aqIp_5G?usp=sharing"
+    },
+    {
+      "name": "(Salma)^2",
+      "comment": "GiveNTake",
+      "link": "giventake3.me",
+      "model": "Github Copilot (Gpt-5-mini & 4 and Claude sonnet 4.5), Gemini Pro, Chatgpt 5 and Fire base studio and Cursor",
+      "tech_stack": "",
+      "date": "2025/10/16",
+      "src_code": "https://github.com/SalmaAlsaghir/GiveNTake",
+      "demo_video": "https://drive.google.com/drive/folders/1LyO98R5QFX6-72aFfTgtvCEcPrJ4rDp5?usp=sharing"
     }
   ]
 }

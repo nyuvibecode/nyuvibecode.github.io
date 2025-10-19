@@ -100,7 +100,7 @@
     },
     {
       "name": "lovecan",
-      "comment": "lovecan",
+      "comment": "",
       "link": "",
       "model": "Cursor, Claude Sonnet 4.5, ChatGPT",
       "tech_stack": "Python, HTML, JS",

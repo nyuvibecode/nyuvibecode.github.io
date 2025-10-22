@@ -1,6 +1,13 @@
 # Overview
 Below are some recommended formats for prompt submission. These are not a strict requirement, but following the format will contribute to your readability score.
 
+# Where to get prompts
+| LLM | Method |
+|---|---|
+| GitHub Copilot | Enter `/save` in the chatbox. |
+| Cursor | In the top right corner of the chat, click the `...` and click `Export Chat`. |
+| Online LLMs | In the top right corner, press the `Share` button. |
+
 # Formats
 ## Plaintext/Markdown
 In a plaintext file, markdown, Google Doc, or Word Doc. Do not submit a PDF. We have also provided a [script](/helpful_scripts/html_to_md_converter.py) to convert HTML to MD.

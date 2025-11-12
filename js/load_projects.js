@@ -2,14 +2,76 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProjects(projectsFile);
 });
 
+let projectsData = null;
+let currentSortColumn = 'score';
+let currentSortDirection = 'desc';
+
 function loadProjects(json) {
     fetch(json)
         .then(response => response.json())
         .then(data => {
+            projectsData = data;
             updateProjectsTable(data);
+            setupTableSorting();
             // updateDatasetSummary(data.dataset);
         })
         .catch(error => console.error('Error loading the projects:', error));
+}
+
+function setupTableSorting() {
+    const headers = document.querySelectorAll('#submissions thead th[data-sort]');
+    headers.forEach(header => {
+        header.style.cursor = 'pointer';
+        header.addEventListener('click', () => {
+            const sortField = header.getAttribute('data-sort');
+            if (currentSortColumn === sortField) {
+                currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSortColumn = sortField;
+                currentSortDirection = 'asc';
+            }
+            
+            // Update sort indicators
+            headers.forEach(h => {
+                h.classList.remove('sort-asc', 'sort-desc');
+            });
+            header.classList.add(`sort-${currentSortDirection}`);
+            
+            sortAndUpdateTable();
+        });
+    });
+}
+
+function sortAndUpdateTable() {
+    if (!projectsData) return;
+    
+    const sortedData = { ...projectsData };
+    sortedData.submissions = [...projectsData.submissions].sort((a, b) => {
+        let aVal = a[currentSortColumn];
+        let bVal = b[currentSortColumn];
+        
+        // Handle empty values
+        if (!aVal && aVal !== 0) aVal = '';
+        if (!bVal && bVal !== 0) bVal = '';
+        
+        // Numeric comparison for score and track_rank
+        if (currentSortColumn === 'score' || currentSortColumn === 'track_rank') {
+            aVal = parseFloat(aVal) || 0;
+            bVal = parseFloat(bVal) || 0;
+        } else {
+            // String comparison for other fields
+            aVal = String(aVal).toLowerCase();
+            bVal = String(bVal).toLowerCase();
+        }
+        
+        if (currentSortDirection === 'asc') {
+            return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+        } else {
+            return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+        }
+    });
+    
+    updateProjectsTable(sortedData, false);
 }
 
 function getModelPretty(model) {
@@ -18,7 +80,7 @@ function getModelPretty(model) {
     return model;
 }
 
-function updateProjectsTable(data) {
+function updateProjectsTable(data, shouldSort = true) {
     const submissionsLoader = document.querySelector('#submissions_loader');
     const submissionsTableBody = document.querySelector('#submissions tbody');
     const demosContainer = document.querySelector('#demos .row');
@@ -34,25 +96,18 @@ function updateProjectsTable(data) {
     submissionsTableBody.innerHTML = '';
     demosContainer.innerHTML = ''; // Clear existing demos
     
-    data.submissions.sort((a, b) => {
-        const dateA = new Date(a.date.replace(/\//g, '-'));
-        const dateB = new Date(b.date.replace(/\//g, '-'));
-        return dateB - dateA;
-    });
+    // Sort by score descending (highest first) on initial load
+    if (shouldSort) {
+        data.submissions.sort((a, b) => b.score - a.score);
+    }
 
     // Update submissions table
     data.submissions.forEach((item) => {
         const row = document.createElement('tr');
-        let formattedDate;
-        try {
-            const date = new Date(item.date.replace(/\//g, '-'));
-            formattedDate = isNaN(date.getTime()) ? item.date : date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
-        } catch (e) {
-            formattedDate = item.date;
-        }
         
         row.innerHTML = `
-            <td>${formattedDate}</td>
+            <td>${item.track}</td>
+            <td>${item.track_rank}</td>
             <td>${item.name} <i>${item.comment}</i></td>
             <td>${item.model}</td>
             <td>${item.tech_stack}</td>

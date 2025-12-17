@@ -32,7 +32,7 @@
     },
     {
       "name": "Coders",
-      "comment": "NYU Hackathon",
+      "comment": "Poolara",
       "link": "https://nyu-hackathon.vercel.app/",
       "model": "GPT 5, Claude, Sonnet",
       "tech_stack": "",
